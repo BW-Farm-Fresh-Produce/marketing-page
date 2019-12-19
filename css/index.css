@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  color: #393636;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #393636;
+  font-family: 'Lobster', cursive;
+}
+h1,
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+header {
+  background-color: #9CEA8F;
+  box-shadow: 0px 0px 5px rgba(82, 65, 65, 0.71);
+}
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: row;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav a {
+  color: rgba(82, 65, 65, 0.71);
+  font-size: 2rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #393636;
+}
+nav a,
+nav button {
+  margin-left: 2rem;
+}
+nav button {
+  border: 1px solid rgba(82, 65, 65, 0.71);
+  color: rgba(82, 65, 65, 0.71);
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  background-color: transparent;
+}
+nav button:hover {
+  box-shadow: 0px 0px 5px #393636;
+  color: #393636;
+  border: 1px solid #393636;
+}
+@media (max-width: 500px) {
+  nav button {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+.content h1,
+.content p {
+  margin-bottom: 15px;
+}
