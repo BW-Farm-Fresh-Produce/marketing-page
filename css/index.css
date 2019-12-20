@@ -135,6 +135,7 @@ html {
 html,
 body {
   color: #393636;
+  font-family: 'Raleway', sans-serif;
 }
 h1,
 h2,
@@ -143,7 +144,7 @@ h4,
 h5,
 h6 {
   color: #393636;
-  font-family: 'Lobster', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 h1,
 h2 {
@@ -155,7 +156,6 @@ h3 {
 p {
   font-size: 1.8rem;
   line-height: 1.4;
-  margin-bottom: 15px;
 }
 header {
   background-color: #9CEA8F;
@@ -164,7 +164,7 @@ header {
 .container {
   max-width: 1200px;
   width: 95%;
-  margin: 0 auto 35px;
+  margin: auto;
 }
 nav {
   display: flex;
@@ -181,9 +181,9 @@ nav {
 }
 nav a {
   color: rgba(82, 65, 65, 0.71);
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-decoration: none;
-  padding-bottom: 5px;
+  align-items: center;
 }
 nav a:hover {
   color: #393636;
@@ -192,6 +192,9 @@ nav a:hover {
   nav a {
     margin: 15px 0;
   }
+}
+nav a:first-child {
+  width: 60%;
 }
 @media (max-width: 800px) {
   nav a:first-child {
@@ -205,12 +208,23 @@ nav a:hover {
     padding-bottom: 0;
   }
 }
+footer {
+  background-color: #9CEA8F;
+  border-top: 1px solid rgba(82, 65, 65, 0.71);
+  box-shadow: 0px 0px 5px rgba(82, 65, 65, 0.71);
+}
+footer .container {
+  padding: 20px 0px;
+}
 .content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin: 25px auto;
+}
+.content:last-child {
+  border-bottom: none;
 }
 .content h1,
 .content h2,
@@ -221,12 +235,30 @@ nav a:hover {
 .content p {
   margin-bottom: 15px;
 }
+.content .half-section {
+  width: 48%;
+  margin: 1% 0;
+}
+.content .half-section img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px #393636;
+}
+@media (max-width: 800px) {
+  .content .half-section {
+    width: 100%;
+  }
+  .content .half-section:nth-child(2) {
+    order: -1;
+  }
+}
 .content .one-third-section {
   width: 30%;
-  margin: 1%;
+  margin: 1% 0;
 }
 @media (max-width: 800px) {
   .content .one-third-section {
     width: 100%;
+    margin: 0;
   }
 }
