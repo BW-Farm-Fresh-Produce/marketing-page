@@ -2,9 +2,9 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: row;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 
     @media @phone {
         flex-direction: column;
@@ -12,37 +12,28 @@ nav {
 
     a {
         color: @nav-font-color;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
+        padding-bottom: 5px;
 
         &:hover {
-            color: @font-color;
-        }
-    }
-
-    a, button {
-        margin-left: 2rem;
-    }
-
-    // Nav button
-    button {
-        border: 1px solid @nav-font-color;
-        color: @nav-font-color;
-        padding: 10px;
-        font-size: 1.6rem;
-        border-radius: 5px;
-        background-color: transparent;
-
-        &:hover {
-            box-shadow: 0px 0px 5px @font-color;
-            color: @font-color;
-            border: 1px solid @font-color;  
+            color: @font-color;   
         }
 
         @media @phone {
-            border: none;
-            box-shadow: none;
-            padding: 0;
+            margin: 15px 0;
+        }
+    }
+
+    a:first-child {
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        @media @phone {
+            padding-bottom: 0;
         }
     }
 }

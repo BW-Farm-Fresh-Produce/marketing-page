@@ -164,15 +164,15 @@ header {
 .container {
   max-width: 1200px;
   width: 95%;
-  margin: 0 auto 30px;
+  margin: 0 auto 35px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: row;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 @media (max-width: 500px) {
   nav {
@@ -181,37 +181,52 @@ nav {
 }
 nav a {
   color: rgba(82, 65, 65, 0.71);
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 nav a:hover {
   color: #393636;
 }
-nav a,
-nav button {
-  margin-left: 2rem;
-}
-nav button {
-  border: 1px solid rgba(82, 65, 65, 0.71);
-  color: rgba(82, 65, 65, 0.71);
-  padding: 10px;
-  font-size: 1.6rem;
-  border-radius: 5px;
-  background-color: transparent;
-}
-nav button:hover {
-  box-shadow: 0px 0px 5px #393636;
-  color: #393636;
-  border: 1px solid #393636;
-}
 @media (max-width: 500px) {
-  nav button {
-    border: none;
-    box-shadow: none;
-    padding: 0;
+  nav a {
+    margin: 15px 0;
   }
 }
+@media (max-width: 800px) {
+  nav a:first-child {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  nav a:first-child {
+    padding-bottom: 0;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
 .content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
 .content p {
   margin-bottom: 15px;
+}
+.content .one-third-section {
+  width: 30%;
+  margin: 1%;
+}
+@media (max-width: 800px) {
+  .content .one-third-section {
+    width: 100%;
+  }
 }
