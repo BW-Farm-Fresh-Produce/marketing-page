@@ -210,8 +210,11 @@ nav a:first-child {
 }
 footer {
   background-color: #9CEA8F;
-  border-top: 1px solid rgba(82, 65, 65, 0.71);
+  border-top: 1px solid #9CEA8F;
   box-shadow: 0px 0px 5px rgba(82, 65, 65, 0.71);
+}
+footer h3 {
+  margin-bottom: 15px;
 }
 footer .container {
   padding: 20px 0px;
@@ -233,7 +236,8 @@ footer .container {
 .content h5,
 .content h6,
 .content p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  width: 100%;
 }
 .content .half-section {
   width: 48%;
@@ -243,6 +247,7 @@ footer .container {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0px 0px 7px #393636;
+  margin-bottom: 15px;
 }
 @media (max-width: 800px) {
   .content .half-section {
@@ -254,11 +259,41 @@ footer .container {
 }
 .content .one-third-section {
   width: 30%;
-  margin: 1% 0;
+  margin: 1% 0%;
 }
 @media (max-width: 800px) {
   .content .one-third-section {
     width: 100%;
     margin: 0;
+  }
+}
+.content .one-third-section .card {
+  width: 100%;
+  margin: 1% auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.content .one-third-section .card:hover {
+  box-shadow: 0px 0px 5px rgba(82, 65, 65, 0.71);
+}
+.content .one-third-section .card .card-img img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.content .one-third-section .card .card-info {
+  padding: 5px;
+  border-top: 1px solid #393636;
+}
+.content .one-third-section .card .card-info p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .content .one-third-section .card {
+    margin: 20px auto;
+    width: 80%;
   }
 }
