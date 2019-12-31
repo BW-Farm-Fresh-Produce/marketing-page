@@ -5,7 +5,7 @@ footer {
     display: flex;
 
     .container {
-        padding: 20px 0px;
+        padding: 50px 0px;
 
         h3 {
             margin-bottom: 15px;
@@ -15,10 +15,20 @@ footer {
             table-layout: fixed;
             width: 100%;
 
-            td:first-child {
+            & td:first-child {
                 width: 3%;
                 text-align: center;
+
+                @media @phone {
+                    width: 10%;
+                }
             }
         }
     }
+}
+
+.footer-footer {
+    padding: 5px;
+    text-align: center;
+    font-size: 0.5rem;
 }

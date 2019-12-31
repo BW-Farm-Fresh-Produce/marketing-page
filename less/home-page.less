@@ -1,21 +1,26 @@
 .banner {
     position: relative;
     display: flex;
-    background-image: url("img/vegetables_2.jpg");
     background-size: cover;
     height: 600px;
+    opacity: 0.8;
+    background-size: cover;
 
-
-    // img {
-    //     width: 100%;
-    //     z-index: -1;
-    // }
+    @media @tablet {
+        height: 500px;
+    }
 
     h1 {
-        text-align: center;
         margin: auto;
-        justify-content: center;
+        color: black;
+        font-size: 7rem !important;
     }
+}
+
+.shade {
+    background-color: #EEEEEE;
+    width: 100%;
+    padding: 10px 0px 5px;
 }
 
 .content {
@@ -30,7 +35,7 @@
     }
 
     h1, h2, h3, h4, h5, h6, p {
-        margin-bottom: 25px;
+        margin: 10px 0px 25px;
         width: 100%;
     }
 
@@ -47,10 +52,6 @@
 
         @media @tablet {
             width: 100%;
-
-            &:nth-child(2) {
-                order: -1;
-            }
         }
     }
 
