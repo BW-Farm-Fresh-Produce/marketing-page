@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title class="typing">Fresh Farm Produce</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+
+<div class="head-nav">
+<header>
+  <h1> Fresh Farm Produce</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="Login.html">Sign-in</a>
+      </nav>
+</header>
+<body>
+  <section class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/contact-1000x400.jpg" style="width:100%">
+    </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <section class="home-container">
+      <div class="welcome">
+         <h1>Contact Us</h1>
+         <h4>The success and growth of Fresh farm is a consequence of the hard work of dedicated professionals who love their work. Our team pride themselves on their expertise with a variety of tools and platforms and are keenly aware of every technological development in their area of work. </h4>
+         
+      </div>
+      <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxf26QrQR7K5FPa9JWlPVbiwD6MvEgeBA&callback=initMap">
+    </script>
+      
+</body>
+<footer class="footer-container"></footer>
+
+    <script src="slideshow.js"></script>
