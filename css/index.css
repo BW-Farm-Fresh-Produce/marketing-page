@@ -187,7 +187,7 @@ nav {
 }
 nav a {
   color: rgba(82, 65, 65, 0.71);
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-decoration: none;
   align-items: center;
 }
@@ -243,21 +243,28 @@ footer .container table td:first-child {
   padding: 5px;
   text-align: center;
   font-size: 0.5rem;
+  background-color: #EEEEEE;
 }
 .banner {
-  position: relative;
-  display: flex;
-  height: 600px;
-  opacity: 0.8;
   background-size: cover;
+  height: 600px;
+  opacity: 0.9;
 }
 @media (max-width: 800px) {
   .banner {
     height: 500px;
   }
 }
-.banner h1 {
-  margin: auto;
+.banner .background-header {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner .background-header h1 {
+  margin: auto 0;
   color: black;
   font-size: 7rem !important;
 }
