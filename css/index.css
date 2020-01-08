@@ -192,6 +192,11 @@ h3 {
 h4 {
   font-size: 1.8rem;
 }
+h6 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+  color: gray;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -384,10 +389,14 @@ p {
 .footer-container {
   background: #A2DF98;
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin: 0 auto;
   color: #524141;
   border-top: 1px dashed #524141;
+  text-align: center;
+  position: absolute;
+  font-size: 1.5rem;
+  padding-top: 30px;
 }
 @media (min-width: 1000px) {
   .home-container {
@@ -655,6 +664,45 @@ p {
     align-items: center;
     flex-wrap: wrap;
   }
+}
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  padding: 10px 20px 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #524141;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 2px dashed #A2DF98;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+input[type=submit]:hover {
+  background-color: #A2DF98;
+  color: white;
+  border-radius: 10px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 @media (min-width: 1000px) {
   .home-container {
