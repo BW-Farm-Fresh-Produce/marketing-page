@@ -1,0 +1,35 @@
+// Mixins Here
+.flex(@direction, @justify, @align,@flex-wrap) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @flex-wrap;
+}
+.btn(@fontsize, @btn-green, @btn-txt-color) {
+    font-size: @fontsize;
+    color: @btn-txt-color;
+    background-color: @btn-green;
+    padding: 1rem 2rem;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      width: 100%;
+      padding: 15px 32px;
+  }
+
+  //Fonts
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Russo+One&display=swap);
+.box {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 10px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   border-radius: 10px;
+}
+// button

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title class="typing">Fresh Farm Produce</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<div class="head-nav">
+<header>
+  <h1> Fresh Farm Produce</h1>
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="/login">Log In</a>
+    <a href="index.html">Sign Up</a>
+      </nav>
+</header>
+<body>
+  <section class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/contact-1000x400.jpg" style="width:100%">
+    </div>
+  </section>
+  <section class="home-container">
+      <div class="welcome">
+         <h1>Contact Us</h1>
+         <h4>The success and growth of Fresh farm is a consequence of the hard work of dedicated professionals who love their work. Our team pride themselves on their expertise with a variety of tools and platforms and are keenly aware of every technological development in their area of work. </h4>
+      </div>
+    <div id="map"></div>
+    
+    <div class="box">
+      <form action="#">
+        <label class="lbl" for="fname"><h6>Name:</h6></label>
+        <input type="text" id="name" name="firstname" placeholder="">
+    
+        <label class="lbl" for="lname"><h6>Email:</h6></label>
+        <input type="text" id="email" name="emailadd" placeholder="">
+        <label class="lbl" for="phone"><h6>Phone Number:</h6></label>
+        <input type="text" id="phone" name="phonenum" placeholder="">
+    
+        <label class="lbl" for="area"><h6>Your Comments:</h6></label>
+        <textarea type="text" rows="4" cols="50">
+          
+          </textarea>
+      
+        <input type="submit" value="Submit">
+      </form>
+      </section>
+</body>
+<footer class="footer-container">© Hamid Azizy</footer>
+
+    <script src="slideshow.js"></script>
+
+    <!-- map -->
+    <script>
+      function initMap() {
+        var uluru = {lat: 37.774929, lng: -122.419418};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 10, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxf26QrQR7K5FPa9JWlPVbiwD6MvEgeBA&callback=initMap">
+          </script>

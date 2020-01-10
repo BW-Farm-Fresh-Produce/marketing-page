@@ -1,0 +1,286 @@
+// Desktop min 1000px
+@media @desktop {
+    .home-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+            padding: 20px 0px 20px;
+            font-weight: bold;
+            color: @mainbg-green;
+        }
+        h4{
+            text-align: center;
+            padding: 0px 0px 20px;
+            font-family: Lato,Helvetica,Arial,sans-serif;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 150%;
+        }
+    .row_team{
+        width: 100%;
+        .flex(row,space-between,center,wrap);
+        .col_team{
+            width: calc(100% - 68%);
+            // width: 32%;
+            .box();
+            margin: 5px auto;
+        }
+            .box-team{
+                margin: 0 auto;
+                padding: 20px 10px 10px 20px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+                h3{
+                text-align: center;
+                font-family: 'Russo One', sans-serif;
+                padding: 20px 0px 20px;
+                font-size: 2rem;
+                color: gray;
+                }
+                h5{
+                    text-align: center;
+                    // border-bottom: 1px dashed @mainbg-green;
+                    font-size: 1.5rem;
+                }
+                p{
+                    text-align: justify;
+                    padding: 20px 0px 10px;
+                    // font-size: 2rem;
+    
+                    }
+                .social{
+                    .flex(row,space-evenly,center,nowrap);
+                     margin: 0 auto;
+                     padding: 20px 10px 10px 10px;
+
+                    img{
+                     width: 20px;
+                     height: 20px;
+                     border-radius: 0%;
+                    }
+                         }
+                }
+            }
+        }}
+
+        //Computer max-100px
+@media @computer {
+    .home-container{
+        max-width: 100%;
+        margin: 0 auto;
+            h1{
+                font-family: 'Great Vibes', cursive;
+                text-align: center;
+                padding: 20px 0px 20px;
+                font-weight: bold;
+                color: @mainbg-green;
+            }
+            h4{
+                text-align: center;
+                padding: 0px 0px 20px;
+                font-family: Lato,Helvetica,Arial,sans-serif;
+                width: 90%;
+                margin: 0 auto;
+                line-height: 150%;
+            }
+        .row_team{
+            width: 100%;
+            .flex(row,space-between,center,wrap);
+            .col_team{
+                width: calc(100% - 51%);
+                .box();
+                margin: 5px auto;
+            }
+                .box-team{
+                    margin: 0 auto;
+                    padding: 20px 10px 10px 20px;
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                    }
+                    h3{
+                    text-align: center;
+                    font-family: 'Russo One', sans-serif;
+                    padding: 20px 0px 20px;
+                    font-size: 2rem;
+                    color: gray;
+                    }
+                    h5{
+                        text-align: center;
+                        // border-bottom: 1px dashed @mainbg-green;
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        text-align: justify;
+                        padding: 20px 0px 10px;
+                        // font-size: 2rem;
+        
+                        }
+                    .social{
+                        .flex(row,space-evenly,center,nowrap);
+                         margin: 0 auto;
+                         padding: 20px 10px 10px 10px;
+    
+                        img{
+                         width: 20px;
+                         height: 20px;
+                         border-radius: 0%;
+                        }
+                             }
+                    }
+                }
+            }
+    }
+    @media @tablet {
+        .home-container{
+            padding-top: 15%;
+            max-width: 100%;
+            margin: 0 auto;
+                h1{
+                    font-family: 'Great Vibes', cursive;
+                    text-align: center;
+                    padding: 20px 0px 20px;
+                    font-weight: bold;
+                    color: @mainbg-green;
+                }
+                h4{
+                    text-align: center;
+                    padding: 0px 0px 20px;
+                    font-family: Lato,Helvetica,Arial,sans-serif;
+                    width: 90%;
+                    margin: 0 auto;
+                    line-height: 150%;
+                }
+            .row_team{
+                width: 100%;
+                .flex(row,space-between,center,wrap);
+                .col_team{
+                    width: calc(100% - 51%);
+                    .box();
+                    margin: 5px auto;
+                }
+                    .box-team{
+                        margin: 0 auto;
+                        padding: 20px 10px 10px 20px;
+                        img{
+                            display: block;
+                            margin: 0 auto;
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                        }
+                        h3{
+                        text-align: center;
+                        font-family: 'Russo One', sans-serif;
+                        padding: 20px 0px 20px;
+                        font-size: 2rem;
+                        color: gray;
+                        }
+                        h5{
+                            text-align: center;
+                            // border-bottom: 1px dashed @mainbg-green;
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            text-align: justify;
+                            padding: 20px 0px 10px;
+                            // font-size: 2rem;
+            
+                            }
+                        .social{
+                            .flex(row,space-evenly,center,nowrap);
+                             margin: 0 auto;
+                             padding: 20px 10px 10px 10px;
+        
+                            img{
+                             width: 20px;
+                             height: 20px;
+                             border-radius: 0%;
+                            }
+                        }
+                    }
+            }
+         }
+    }
+    //Phone max 500px
+    @media @phone {
+        .home-container{
+            padding-top: 0%;
+            max-width: 100%;
+            margin: 0 auto;
+                h1{
+                    font-family: 'Great Vibes', cursive;
+                    text-align: center;
+                    padding: 20px 0px 20px;
+                    font-weight: bold;
+                    color: @mainbg-green;
+                }
+                h4{
+                    text-align: center;
+                    padding: 0px 0px 20px;
+                    font-family: Lato,Helvetica,Arial,sans-serif;
+                    width: 90%;
+                    margin: 0 auto;
+                    line-height: 150%;
+                }
+            .row_team{
+                width: 100%;
+                .flex(row,space-between,center,wrap);
+                .col_team{
+                    width: 98%;
+                    .box();
+                    margin: 5px auto;
+                }
+                    .box-team{
+                        margin: 0 auto;
+                        padding: 20px 10px 10px 20px;
+                        img{
+                            display: block;
+                            margin: 0 auto;
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                        }
+                        h3{
+                        text-align: center;
+                        font-family: 'Russo One', sans-serif;
+                        padding: 20px 0px 20px;
+                        font-size: 2rem;
+                        color: gray;
+                        }
+                        h5{
+                            text-align: center;
+                            // border-bottom: 1px dashed @mainbg-green;
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            text-align: justify;
+                            padding: 20px 0px 10px;
+                            // font-size: 2rem;
+            
+                            }
+                        .social{
+                            .flex(row,space-evenly,center,nowrap);
+                             margin: 0 auto;
+                             padding: 20px 10px 10px 10px;
+        
+                            img{
+                             width: 20px;
+                             height: 20px;
+                             border-radius: 0%;
+                            }
+                        }
+                    }
+            }
+        }
+    }
